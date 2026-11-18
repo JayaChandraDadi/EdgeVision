@@ -1,0 +1,85 @@
+{
+  "rows": [
+    {
+      "engine": "PyTorch FP32 (eager)",
+      "size_mb": 6.242855,
+      "accuracy": 0.9145,
+      "threads": 1,
+      "latency_ms_median": 3.8973625000835455,
+      "latency_ms_p90": 6.0629030003838125,
+      "throughput_img_s": 684.3234520665462
+    },
+    {
+      "engine": "PyTorch FP32 (eager)",
+      "size_mb": 6.242855,
+      "accuracy": 0.9145,
+      "threads": 2,
+      "latency_ms_median": 3.774484000132361,
+      "latency_ms_p90": 4.155766000167205,
+      "throughput_img_s": 1221.358254381778
+    },
+    {
+      "engine": "ONNX Runtime FP32",
+      "size_mb": 6.119446,
+      "accuracy": 0.9145,
+      "threads": 1,
+      "latency_ms_median": 1.0638710002695007,
+      "latency_ms_p90": 1.2116379998587945,
+      "throughput_img_s": 1287.3174341199958
+    },
+    {
+      "engine": "ONNX Runtime FP32",
+      "size_mb": 6.119446,
+      "accuracy": 0.9145,
+      "threads": 2,
+      "latency_ms_median": 1.129322500219132,
+      "latency_ms_p90": 1.29902700018647,
+      "throughput_img_s": 2382.128290960102
+    },
+    {
+      "engine": "ONNX Runtime INT8",
+      "size_mb": 1.707632,
+      "accuracy": 0.9091,
+      "threads": 1,
+      "latency_ms_median": 0.9364504999211931,
+      "latency_ms_p90": 1.3534380000237434,
+      "throughput_img_s": 1404.9297998775926
+    },
+    {
+      "engine": "ONNX Runtime INT8",
+      "size_mb": 1.707632,
+      "accuracy": 0.9091,
+      "threads": 2,
+      "latency_ms_median": 1.0058249997655366,
+      "latency_ms_p90": 1.4923889998499362,
+      "throughput_img_s": 1907.8068155526842
+    },
+    {
+      "engine": "TinyInfer FP32 (C++)",
+      "size_mb": 6.119446,
+      "accuracy": 0.9145,
+      "threads": 1,
+      "latency_ms_median": 4.485417000068992,
+      "latency_ms_p90": 4.64030900002399,
+      "throughput_img_s": 246.79268563160394
+    },
+    {
+      "engine": "TinyInfer FP32 (C++)",
+      "size_mb": 6.119446,
+      "accuracy": 0.9145,
+      "threads": 2,
+      "latency_ms_median": 3.5862995000570663,
+      "latency_ms_p90": 4.056768000282318,
+      "throughput_img_s": 340.72268740740543
+    }
+  ],
+  "agreement_with_fp32": {
+    "PyTorch FP32 (eager)": 1.0,
+    "ONNX Runtime FP32": 1.0,
+    "ONNX Runtime INT8": 0.9732,
+    "TinyInfer FP32 (C++)": 1.0
+  },
+  "cpu": "x86_64",
+  "onnxruntime": "1.29.0",
+  "torch": "2.15.0+cu132"
+}

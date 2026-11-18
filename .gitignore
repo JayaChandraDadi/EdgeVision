@@ -1,0 +1,6 @@
+data/
+models/last.pt
+models/*.pre.onnx
+__pycache__/
+.pytest_cache/
+weights/

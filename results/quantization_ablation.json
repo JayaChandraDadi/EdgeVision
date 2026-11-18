@@ -1,0 +1,9 @@
+{
+  "note": "INT8 post-training static quantization of models/edgevision_fp32.onnx (91.45% top-1). 1,024 calibration images from the training set; per-channel int8 weights, per-tensor uint8 activations. Batch-1 latency: ONNX Runtime, 1 thread.",
+  "runs": [
+    {"format": "QDQ", "calibration": "minmax", "top1": 0.9069, "size_mb": 1.85},
+    {"format": "QDQ", "calibration": "percentile 99.999", "top1": 0.9087, "size_mb": 1.85, "latency_ms": 0.891},
+    {"format": "QOperator", "calibration": "percentile 99.999", "top1": 0.9091, "size_mb": 1.71, "latency_ms": 0.81, "shipped": true}
+  ],
+  "fp32_reference": {"top1": 0.9145, "size_mb": 6.12, "latency_ms": 0.96}
+}

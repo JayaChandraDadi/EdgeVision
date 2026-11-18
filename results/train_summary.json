@@ -1,0 +1,6 @@
+{
+  "epochs": 10,
+  "test_acc": 0.9145,
+  "params": 1528106,
+  "pretrained": "mobilenetv3-small-55df8e1f.pth"
+}
